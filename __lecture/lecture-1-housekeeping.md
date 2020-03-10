@@ -11,7 +11,7 @@ Check the render method of `App`.
 in SomeComponent (at src/index.js:24)
 in App (at src/index.js:31)
 ```
-
+ex: key = {`${module.title}-${day.label}}
 ---
 
 ### 🏠Housekeeping: Modules
@@ -84,7 +84,7 @@ export const MAGIC_NUMBER = 123;
 
 ```js
 // src/index.js
-import MAGIC_NUMBER from './data';
+import { MAGIC_NUMBER } from './data';
 ```
 
 ---
@@ -101,14 +101,14 @@ export default data;
 
 ```js
 // src/index.js
-import {data, users} from './data';
+import data, { users } from './data';
 ```
 
 ---
 
 ```js
 // src/data.js
-export default const baseball = '⚾️';
+export default  '⚾️';
 
 ```
 

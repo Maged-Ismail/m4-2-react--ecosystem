@@ -95,7 +95,6 @@ import {
 function App(props) {
   return (
     <Router>
-      <div>
         <Switch>
           <Route exact path="/">
             <Homepage />
@@ -107,7 +106,6 @@ function App(props) {
             <ErrorPage />
           </Route>
         </Switch>
-      </div>
     </Router>
   )
 }
